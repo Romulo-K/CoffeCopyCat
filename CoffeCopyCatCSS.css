@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fef1ff;
+  font-family:'Quicksand', sans-serif;
+  color: #4a1050;
+}
+header {
+  background-color: #f4e3ff;
+  padding: 10px 10px;
+  text-align: center;
+  border-bottom: 3px solid #ce92ff;
+}
+header h1 {
+  font-size: 40px;
+  font-family: 'Lora', serif;
+  margin-bottom: 10px;
+}
+header h2 {
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+}
+nav.menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: #ce92ff;
+  padding: 1rem;
+}
+nav.menu a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #b06fdd;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+nav.menu a:hover {
+  background-color: #8c44c7;
+}
+section {
+  padding: 10px 10px;
+}
+
+article {
+  background-color: #fef1ff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+article h3 {
+  background-color: #ce92ff;
+  color: white;
+  padding: 5px 10px;
+  margin-top: 0;
+}
+.gridimagem {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.gridimagem img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px;
+  transition: transform 0.3s ease;
+}
+.gridimagem img:hover {
+  transform: scale(1.05);
+}
+#contato {
+  background-color: #fbe8ff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+}
+#contato h2 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+#contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#contato label {
+  font-weight: bold;
+}
+#contato input,
+#contato textarea {
+  padding: 12px;
+  font-size: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+#contato button {
+  background-color: #ce92ff;
+  color: white;
+  padding: 12px;
+  font-size: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#contato button:hover {
+  background-color: #8c44c7;
+}
+footer {
+  background-color: #f4e3ff;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  color: #654381;
+  border-top: 2px solid #ce92ff;
+}
+@media (max-width: 768px) {
+  nav.menu {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+section, header, footer {
+  animation: fadeInUp 0.8s ease-out;
+}
